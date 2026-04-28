@@ -14,7 +14,7 @@ export default class extends BaseSchema {
         .inTable('sessions')
         .onDelete('CASCADE')
 
-      table.unique(['user_id', 'session_id']) // Un utilisateur ne peut réserver la même session qu'une seule fois
+      table.unique(['user_id', 'session_id']) // Un utilisateur peut réserver la même session qu'une seule fois
 
       table.timestamp('created_at')
     })

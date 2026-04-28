@@ -8,13 +8,13 @@ export default class Coach extends BaseModel {
   declare id: number
 
   @column()
-  declare firstName: string | null
+  declare firstName: string
 
   @column()
-  declare name: string | null
+  declare name: string
 
   @column()
-  declare specialty: string | null
+  declare specialty: string
 
   // hasMany sessions
   @hasMany(() => Session)
